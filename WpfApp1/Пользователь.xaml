@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.Пользователь"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Пользователь" Height="424.038" Width="691.827" Loaded="Window_Loaded">
+    <Grid  Background="#FF0F17B4">
+        <DataGrid x:Name="Рецепты" Margin="44,34,177,44" SelectionChanged="DobSotr_SelectionChanged"  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+
+
+                <DataGridTextColumn Binding="{Binding ID}" Header="id" Width="0.2*"/>
+                <DataGridTextColumn Binding="{Binding Название_рецепта}" Header="Название рецепта" Width="1.45*"/>
+                <DataGridTextColumn Binding="{Binding Рецепт}" Header="Рецепт" Width="2*"/>
+
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+
+        <Button Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="132" Click="Пользователь_Рецепт" Margin="542,306,0,0" Background="#FFECEC26"/>
+
+    </Grid>
+</Window>
